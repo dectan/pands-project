@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 #https://www.w3schools.com/python/pandas/ref_df_describe.asp
+#histograms & box plots @ https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
+#adding legend https://www.geeksforgeeks.org/matplotlib-pyplot-legend-in-python/
 import seaborn as sns
 import sys
 #import csv
@@ -41,13 +43,13 @@ sys.stdout.close()
 
 plt.figure(figsize = (10, 7))
 x = iris.sepal_length
-plt.hist(x, color = "blue")
+plt.hist(x, bins=20,color = "blue")
 plt.title("Sepal Length in cm")
 plt.xlabel("Sepal Length cm")
 plt.ylabel("Count")
-plt.legend("sepal_lenght")
+plt.legend(['sepal_lenght'])
 plt.savefig('sepal_lenght_histogram.png')
-#plt.show() 
+plt.show() 
 
 
 #Histogram for Sepal Width
@@ -56,11 +58,11 @@ plt.savefig('sepal_lenght_histogram.png')
 
 plt.figure(figsize = (10, 7))
 x = iris.sepal_width
-plt.hist(x,color = "green")
+plt.hist(x,bins=20,color = "green")
 plt.title("Sepal Width in cm")
 plt.xlabel("Sepal_Width_cm")
 plt.ylabel("Count")
-plt.legend("Sepal Width")
+plt.legend(['Sepal_Width'])
 plt.savefig('sepal_width_histogram.png')
 plt.show() 
 
@@ -70,13 +72,13 @@ plt.show()
 
 plt.figure(figsize = (10, 7))
 x = iris.petal_length
-plt.hist(x,color = "red")
+plt.hist(x,bins=20,color = "red")
 plt.title("Petal Length in cm")
 plt.xlabel("Petal_Length_cm")
 plt.ylabel("Count")
-plt.legend("vv",prop={'size': 12})
+plt.legend(['Petal_length'])
 plt.savefig('petal_length_hist.png')
-#plt.show() 
+plt.show() 
 
 
 #Histogram for Petal Width
@@ -84,11 +86,11 @@ plt.savefig('petal_length_hist.png')
 
 plt.figure(figsize = (10, 7))
 #x = iris.petal_width
-plt.hist(x= iris.petal_width, color = "yellow")
+plt.hist(x, bins=20, color = "yellow")
 plt.title("Petal Width in cm")
 plt.xlabel("Petal_Width_cm")
 plt.ylabel("Count")
-plt.legend("Petal Width")
+plt.legend(['Petal_Width'])
 plt.savefig('petal_width_histogram.png')
 plt.show() 
 
@@ -104,10 +106,8 @@ plt.show()
 
 
 
-'''
+
 #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
 iris_setosa=iris.loc[iris["type"]=="Iris-setosa"]
 iris_virginica=iris.loc[iris["type"]=="Iris-virginica"]
 iris_versicolor=iris.loc[iris["type"]=="Iris-versicolor"]
-
-'''
