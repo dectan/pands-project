@@ -20,23 +20,56 @@ iris_virg = iris[iris.type == "Iris-virginica"]
 
 #https://stackoverflow.com/questions/34926517/stop-sys-stdout-from-writing-to-a-text-file
 def write_to_file():
+    print("******************")
     sys.stdout = open ("summary.txt","w")
-#print initial 5 colums
+    #calculate sum/mean/median of sepal lenght
+    sum_data = iris['sepal_length'].sum()
+    mean_data = iris["sepal_length"].mean()
+    median_data = iris["sepal_length"].median()
+    print("Sum of sepal lenght:",sum_data, "\nMean of sepal lenght:", mean_data, "\nMedian of sepal lenght:",median_data)
+    print("******************")
+    #calculate sum/mean/median of sepal width
+    sum_data = iris['sepal_width'].sum()
+    mean_data = iris["sepal_width"].mean()
+    median_data = iris["sepal_width"].median()
+    print("Sum of sepal width:",sum_data, "\nMean of sepal width:", mean_data, "\nMedian of sepal width:",median_data)
+    print("******************")
+    #calculate sum/mean/median of petal lenght
+    sum_data = iris['petal_length'].sum()
+    mean_data = iris["petal_length"].mean()
+    median_data = iris["petal_length"].median()
+    print("Sum of petal length:",sum_data, "\nMean of petal length:", mean_data, "\nMedian of petal length:",median_data)
+    print("******************")
+    #calculate sum/mean/median of petal width
+    sum_data = iris['petal_width'].sum()
+    mean_data = iris["petal_width"].mean()
+    median_data = iris["petal_width"].median()
+    print("Sum of petal width:",sum_data, "\nMean of petal width:", mean_data, "\nMedian of petal width:",median_data)
+    print("******************")
+
+
+#print initial 5 rows
+    print("Initial 5 Rows")
     print(iris.head())
-    print("*********")
+    print("******************")
 #print column titles
-    print("columns",iris.columns)
-    print("*********")
+    print("columns in this table are",iris.columns)
+    print("******************")
 #print count of each type
-    print("count",iris.type.value_counts())
-    print("*********")
+    print("count of each type is\n",iris.type.value_counts())
+    print("******************")
 
 #print qty rows,columns
-    print("shape:",iris.shape)
-    print("*********")
+    print("shape of this table is :",iris.shape)
+    print("******************")
 #https://www.w3schools.com/python/pandas/ref_df_describe.asp
     print(iris.describe())
-    print("*********")
+    print("******************")
+    
+
+
+
+
     sys.stdout.close()
     
 #print("summary.txt file is closed")
@@ -46,9 +79,7 @@ def write_to_file():
 # Histogram for Sepal Length
 #fix legend issus @https://stackoverflow.com/questions/43872450/matplotlib-histogram-with-multiple-legend-entries
 def sepal_lenght_hist():
-    
-
-    
+       
     plt.hist(iris_s["sepal_length"],  label = "Iris setosa", color = "green",alpha=1)
     plt.hist(iris_vers["sepal_length"],  label = "Iris versicolor", color = "blue",alpha=.5)
     plt.hist(iris_virg["sepal_length"],  label = "Iris virginica", color = "yellow",alpha=.6)
@@ -59,7 +90,7 @@ def sepal_lenght_hist():
     plt.ylabel("Count")
     plt.legend(["Iris setosa","Iris versicolor","Iris virginica"])
     plt.savefig("sepal_lenght_histogram.png")
-    plt.show()
+    #plt.show()
     return
 
 #Histogram for Sepal Width
@@ -75,7 +106,7 @@ def sepal_width_hist():
     plt.ylabel("Count")
     plt.legend(["Iris setosa","Iris versicolor","Iris virginica"])
     plt.savefig('sepal_width_histogram.png')
-    plt.show()
+    #plt.show()
     return
 
 #Histogram for Petal Length
@@ -91,7 +122,7 @@ def petal_length_hist():
     plt.ylabel("Count")
     plt.legend(["Iris setosa","Iris versicolor","Iris virginica"])
     plt.savefig("petal_length_hist2.png")
-    plt.show()
+    #plt.show()
     return
 
 #Histogram for Petal Width
@@ -107,11 +138,12 @@ def petal_width_hist():
     plt.ylabel("Count")
     plt.legend(["Iris setosa","Iris versicolor","Iris virginica"])
     plt.savefig('petal_width_histogram.png')
-    plt.show()
+    #plt.show()
+    return
     
     
 
-
+    
 
 
 
@@ -145,16 +177,6 @@ def scatter_sep_wid_v_pet_wid():
     plt.ylabel('petal_width')
     plt.show()
     #print("programme running")
-    
-
-
-
-
-
-
-
-
-
 
 
 def main():
@@ -162,15 +184,17 @@ def main():
         user_input = str(input("Run Program?"))
         if (user_input == "y" or user_input == "Y"):
             print("program running")
-            write_to_file()
+            #write_to_file()
+            
+            scatter_sep_len_v_wid()
+            scatter_sep_len_v_pet_wid()
+            scatter_sep_wid_v_pet_wid()
             sepal_lenght_hist()
             sepal_width_hist()
             petal_length_hist()
             petal_width_hist()
-            scatter_sep_len_v_wid()
-            scatter_sep_len_v_pet_wid()
-            scatter_sep_wid_v_pet_wid()
             write_to_file()
+            
             
 #col=['sepal_length','sepal_width','petal_length','petal_width','type']
 # Add labels and a title
