@@ -1,3 +1,4 @@
+******************
 Sum of sepal lenght: 876.5 
 Mean of sepal lenght: 5.843333333333335 
 Median of sepal lenght: 5.8

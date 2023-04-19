@@ -11,7 +11,7 @@ import sys
 col=['sepal_length','sepal_width','petal_length','petal_width','type']
 #read in iris.csv file
 iris=pd.read_csv("iris_data.csv",names=col)
-
+#info for histograms
 iris_s = iris[iris.type == "Iris-setosa"]
 iris_vers = iris[iris.type == "Iris-versicolor"]
 iris_virg = iris[iris.type == "Iris-virginica"]
@@ -23,6 +23,7 @@ def write_to_file():
     print("******************")
     sys.stdout = open ("summary.txt","w")
     #calculate sum/mean/median of sepal lenght
+    print("******************")
     sum_data = iris['sepal_length'].sum()
     mean_data = iris["sepal_length"].mean()
     median_data = iris["sepal_length"].median()
@@ -65,13 +66,10 @@ def write_to_file():
 #https://www.w3schools.com/python/pandas/ref_df_describe.asp
     print(iris.describe())
     print("******************")
-    
-
-
-
-
     sys.stdout.close()
     
+
+
 #print("summary.txt file is closed")
 
 #https://www.bing.com/videos/search?q=histograms+iris+data+set+different+colours+python&qpvt=histograms+iris+data+set+different+colours+python&view=detail&mid=A11A51CDECB7554E9784A11A51CDECB7554E9784&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dhistograms%2Biris%2Bdata%2Bset%2Bdifferent%2Bcolours%2Bpython%26qpvt%3Dhistograms%2Biris%2Bdata%2Bset%2Bdifferent%2Bcolours%2Bpython%26FORM%3DVDRE
@@ -79,74 +77,64 @@ def write_to_file():
 # Histogram for Sepal Length
 #fix legend issus @https://stackoverflow.com/questions/43872450/matplotlib-histogram-with-multiple-legend-entries
 def sepal_lenght_hist():
-       
-    plt.hist(iris_s["sepal_length"],  label = "Iris setosa", color = "green",alpha=1)
+    plt.figure(figsize = (10,10))
+    iris_s = iris[iris.type == "Iris-setosa"]
+    iris_vers = iris[iris.type == "Iris-versicolor"]
+    iris_virg = iris[iris.type == "Iris-virginica"]  
+    plt.hist(iris_s["sepal_length"],  label = "Iris setosa", color = "black",alpha=1)
     plt.hist(iris_vers["sepal_length"],  label = "Iris versicolor", color = "blue",alpha=.5)
     plt.hist(iris_virg["sepal_length"],  label = "Iris virginica", color = "yellow",alpha=.6)
-    #x = iris.sepal_length
-    #x = iris.sepal_length
     plt.title("Sepal Length in cm")
     plt.xlabel("Sepal Length cm")
     plt.ylabel("Count")
     plt.legend(["Iris setosa","Iris versicolor","Iris virginica"])
     plt.savefig("sepal_lenght_histogram.png")
     #plt.show()
-    return
-
+    
 #Histogram for Sepal Width
 def sepal_width_hist():
-    
-    plt.hist(iris_s["sepal_width"],label = "Iris setosa", color = "green",alpha=1)
+    plt.figure(figsize = (10,10))
+    plt.hist(iris_s["sepal_width"],label = "Iris setosa", color = "black",alpha=1)
     plt.hist(iris_vers["sepal_width"],label = "Iris versicolor", color = "blue",alpha=.5)
     plt.hist(iris_virg["sepal_width"],label = "Iris virginica", color = "yellow",alpha=.6)
-    #x = iris.sepal_width
-    #plt.hist(x,bins=20,color = "green")
     plt.title("Sepal Width in cm")
     plt.xlabel("Sepal_Width_cm")
     plt.ylabel("Count")
     plt.legend(["Iris setosa","Iris versicolor","Iris virginica"])
     plt.savefig('sepal_width_histogram.png')
     #plt.show()
-    return
 
 #Histogram for Petal Length
 def petal_length_hist():
-    
-    plt.hist(iris_s["petal_length"],  label = "Iris setosa", color = "green",alpha=1)
+    plt.figure(figsize = (10,10))
+    plt.hist(iris_s["petal_length"],  label = "Iris setosa", color = "black",alpha=1)
     plt.hist(iris_vers["petal_length"],  label = "Iris versicolor", color = "blue",alpha =.5)
     plt.hist(iris_virg["petal_length"],  label = "Iris virginica", color = "yellow",alpha=.6)
-    #x = iris.petal_length
-    #plt.hist(x,bins=20,color = "red")
     plt.title("Petal Length in cm")
     plt.xlabel("Petal_Length_cm")
     plt.ylabel("Count")
     plt.legend(["Iris setosa","Iris versicolor","Iris virginica"])
-    plt.savefig("petal_length_hist2.png")
-    #plt.show()
-    return
+    plt.savefig("petal_length_histogram.png")
+    #plt.show()  
 
 #Histogram for Petal Width
-def petal_width_hist():
-    
-    plt.hist(iris_s["petal_width"],  label = "Iris setosa", color = "green",alpha=1)
+def petal_width_hist():  
+    plt.figure(figsize = (9,9))  
+    plt.hist(iris_s["petal_width"],  label = "Iris setosa", color = "black",alpha=1)
     plt.hist(iris_vers["petal_width"],  label = "Iris versicolor", color = "blue",alpha=.5)
     plt.hist(iris_virg["petal_width"],  label = "Iris virginica", color = "yellow",alpha=.6)
-    #x = iris.petal_width
-    #plt.hist(x, bins=20, color = "yellow")
     plt.title("Petal Width in cm")
     plt.xlabel("Petal_Width_cm")
     plt.ylabel("Count")
     plt.legend(["Iris setosa","Iris versicolor","Iris virginica"])
     plt.savefig('petal_width_histogram.png')
     #plt.show()
-    return
-    
-    
 
-    
-
-
-
+def hist():
+    sepal_lenght_hist()
+    sepal_width_hist()
+    petal_length_hist()
+    petal_width_hist() 
 
 
 #scatterplot Sepal Lenght & Sepal Width
@@ -189,33 +177,16 @@ def main():
             scatter_sep_len_v_wid()
             scatter_sep_len_v_pet_wid()
             scatter_sep_wid_v_pet_wid()
-            sepal_lenght_hist()
-            sepal_width_hist()
-            petal_length_hist()
-            petal_width_hist()
+            
             write_to_file()
-            
-            
-#col=['sepal_length','sepal_width','petal_length','petal_width','type']
-# Add labels and a title
-            
+            hist()
 
-# Show the plot
-            #plt.show()
         else:
             print("Program only runs when y/Y is entered")
             
-
     except ValueError as e:
             print(f"Error:",e)
 
-
 main()
-#print("programme running")
+print("programme running")
 #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
-#iris_setosa=iris.loc[iris["type"]=="Iris-setosa"]
-#iris_virginica=iris.loc[iris["type"]=="Iris-virginica"]
-#iris_versicolor=iris.loc[iris["type"]=="Iris-versicolor"]
-iris_s = iris[iris.type == "Iris-setosa"]
-iris_vers = iris[iris.type == "Iris-versicolor"]
-iris_virg = iris[iris.type == "Iris-virginica"]
