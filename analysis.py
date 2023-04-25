@@ -16,12 +16,6 @@ iris_s = iris[iris.type == "Iris-setosa"]
 iris_vers = iris[iris.type == "Iris-versicolor"]
 iris_virg = iris[iris.type == "Iris-virginica"]
 
-
-
-
-
-
-
 #https://stackoverflow.com/questions/34926517/stop-sys-stdout-from-writing-to-a-text-file
 def write_to_file():
     print("******************")
@@ -52,7 +46,6 @@ def write_to_file():
     print("Sum of petal width:",sum_data, "\nMean of petal width:", mean_data, "\nMedian of petal width:",median_data)
     print("******************")
 
-
 #print initial 5 rows
     print("Initial 5 Rows")
     print(iris.head())
@@ -71,8 +64,6 @@ def write_to_file():
     print(iris.describe())
     print("******************")
     sys.stdout.close()
-    
-
 
 #print("summary.txt file is closed")
 
@@ -101,25 +92,28 @@ def sepal_lenght_box():
     sns.set(style='whitegrid') # set style of the plot
 # create box plot
     sns.boxplot(x='type', y='sepal_length', data=iris)
-    
+    plt.savefig("sepal_lenght_box.png")
     plt.show()
     return
 def sepal_width_box():
     sns.set(style='whitegrid') # set style of the plot
 # create box plot
     sns.boxplot(x='type', y='sepal_width', data=iris)
+    plt.savefig("sepal_width_box.png")
     plt.show()
     return
 def petal_lenght_box():
     sns.set(style='whitegrid') # set style of the plot
 # create box plot
     sns.boxplot(x='type', y='petal_length', data=iris)
+    plt.savefig("petal_lenght_box.png")
     plt.show()
     return
 def petal_width_box():
     sns.set(style='whitegrid') # set style of the plot
 # create box plot
     sns.boxplot(x='type', y='petal_width', data=iris)
+    plt.savefig("petal_width_box.png")
     plt.show()
     return
 #scatterplot Sepal Lenght & Sepal Width
@@ -130,40 +124,41 @@ def scatter_sep_len_v_wid():
     plt.title('Sepal Lenght v. Sepal Width')
     plt.xlabel('sepal_length')
     plt.ylabel('sepal_width')
+    plt.savefig("sepal_lenght_v_sepal_width_scatter.png")
     plt.show()
     
-
 #scatterplt sepal_length & petal_length
 def scatter_sep_len_v_pet_wid():
     sns.scatterplot(x='sepal_length', y='petal_length', data=iris, hue = "type",palette = ["green","blue","yellow"])
     plt.title('Sepal Lenght v. Petal Lenght')
     plt.xlabel('sepal_length')
     plt.ylabel('petal_length')
+    plt.savefig("sepal_lenght_v_petal_width_scatter.png")
     plt.show()
-    
 
 #scatterplt sepal_width & petal_width
-
 
 def scatter_sep_len_v_wid():
     sns.scatterplot(x='sepal_length', y='sepal_width', data=iris, hue = "type",palette = ["green","blue","yellow"])
     plt.title('Sepal Lenght v. Sepal Width')
     plt.xlabel('sepal_length')
     plt.ylabel('sepal_width')
+    plt.savefig("sepal_lenght_v_sepal_width_scatter.png")
     plt.show()
-
-def scatter():
-    scatter_sep_len_v_wid()
-    scatter_sep_len_v_pet_wid()
-    scatter_sep_wid_v_pet_wid()
 
 def scatter_sep_wid_v_pet_wid():
     sns.scatterplot(x='sepal_width', y='petal_width', data=iris, hue = "type",palette = ["green","blue","yellow"])
     plt.title('sepal_width v petal_width')
     plt.xlabel('sepal_width')
     plt.ylabel('petal_width')
+    plt.savefig("sepal_width_v_petalal_width_scatter.png")
     plt.show()
     #print("programme running")
+
+def scatter():
+    scatter_sep_len_v_wid()
+    scatter_sep_len_v_pet_wid()
+    scatter_sep_wid_v_pet_wid()
 
 def sepal_lenght_hist():
     plt.figure(figsize = (10,10))
@@ -179,7 +174,6 @@ def sepal_lenght_hist():
     plt.legend(["Iris setosa","Iris versicolor","Iris virginica"])
     plt.savefig("sepal_lenght_histogram.png")
     plt.show()
-    
     
 #Histogram for Sepal Width
 def sepal_width_hist():
@@ -220,27 +214,17 @@ def petal_width_hist():
     plt.savefig('petal_width_histogram.png')
     plt.show()
     
-
 def main():
     try:
         user_input = str(input("Run Program?"))
         if (user_input == "y" or user_input == "Y"):
             print("program running")
-            #write_to_file()
+            
             hist()
-        
             write_to_file()
-            
-
-            
             scatter()
             box()
-            #write_to_file()
-
-
-            
-            
-            
+            write_to_file()
         else:
             print("Program only runs when y/Y is entered")
             
