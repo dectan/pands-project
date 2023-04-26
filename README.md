@@ -7,7 +7,7 @@ For this markup sheet, I used the following websites as guides.<br>
 <li><a href="#">https://www.w3schools.io/file/markdown-cheatsheet/</a></li></p>
 </ol>
 
-<H1>Introduction</H1>>
+<H1>Introduction</H1>
 </p>This project is using the Iris datset and is widely used as introductory dataset, similar to the "Hello World" program. The dataset has measurements in centimetres for 50 flowers from 3 species. The Species are:</p>
 
 <li>Iris-setosa</li>
@@ -20,7 +20,7 @@ For this markup sheet, I used the following websites as guides.<br>
 <li>Sepal Length</li>
 <li>Sepal Width</li>
 <li>Type</li>
-<H1>Analysis</H1>>
+<H1>Analysis</H1>
 
 <p>The following analysis is calculted when program is run, and the output is saved to the following file <em>summary.txt</em>
 <li>Sum, Mean & Median of each column</li>
@@ -39,4 +39,45 @@ For this markup sheet, I used the following websites as guides.<br>
 <li>75%</li>
 <li>max</li>
 </ol>
-<p>
+</p>
+<H1>Histogram</H1>
+<p>The program generates 4 Histograms, for Sepal Lenght,Seapl Width,Petal Lenght & Petal Width. The histograms are displayed and output is saved to individual .png files. These files are as follows:
+<li>Sepal_Lenght_histogram.png</li>
+<li>Sepal_Width_histogram.png</li>
+<li>Petal_Lenght_histogram.png</li>
+<li>Petal_Width_histogram.png</li>
+
+<H1>Histogram Conclusion</H1>
+<p>Some useful information that can be visualised from these
+<li>Petal width of setosa is below .5</li>
+<li>Petal width of virginica is typically largest of 3 types</li>
+<li>Petal Lenght of setosa is between 1 & 2</li>
+
+<H1>Scatter</H1>
+<p>The program generates 3 Scatter plots and the output is saved to individual .png files. These compare the following values
+<li>Sepal_Lenght v Sepal Width</li>
+<li>Sepal_Lenght v Petal Lenght</li>
+<li>Sepal_Lenght v Petal Width</li>
+</p>
+
+<H1>Box</H1>
+<p>The program generates 4 Box plots, for Sepal Lenght,Seapl Width,Petal Lenght & Petal Width. The box plots are displayed and output is saved to individual .png files. These files are as follows:
+<li>Sepal_Lenght_box.png</li>
+<li>Sepal_Width_box.png</li>
+<li>Petal_Lenght_box.png</li>
+<li>Petal_Width_box.png</li>
+
+
+
+
+<H1>References</H1>
+<ol>
+<li></li>
+<li>https://www.kaggle.com/datasets/vikrishnan/iris-dataset</li>
+<li>https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/</li>
+<li>https://medium.com/@naidubhavya06/detailed-explanation-of-exploratory-data-analysis-using-iris-dataset-fa8082a4ce0f</li>
+<li>  </li>
+<li>  </li>
+<li>  </li>
+<li>  </li>
+<li>  </li>

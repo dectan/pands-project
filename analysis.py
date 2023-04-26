@@ -221,7 +221,7 @@ def main():
             print("program running")
             
             hist()
-            write_to_file()
+            #write_to_file()
             scatter()
             box()
             write_to_file()
