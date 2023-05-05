@@ -6,6 +6,12 @@ import matplotlib.pyplot as plt
 #adding legend https://www.geeksforgeeks.org/matplotlib-pyplot-legend-in-python/
 import seaborn as sns
 import sys
+
+
+
+
+
+
 #import csv
 #assign column names to iris_data.csv
 col=['sepal_length','sepal_width','petal_length','petal_width','type']
@@ -213,17 +219,25 @@ def petal_width_hist():
     plt.legend(["Iris setosa","Iris versicolor","Iris virginica"])
     plt.savefig('petal_width_histogram.png')
     plt.show()
-    
+
+#https://www.youtube.com/watch?v=b7JuBsswDlo
+def pair_plot():
+    plt.figure(figsize = (9,9)) 
+    sns.set(style="whitegrid")
+    sns.pairplot(iris, hue="type",height = 3)
+    plt.savefig("pairplot.png")
+    plt.show()
 def main():
     try:
         user_input = str(input("Run Program?"))
         if (user_input == "y" or user_input == "Y"):
             print("program running")
-            
+           
             hist()
             #write_to_file()
             scatter()
             box()
+            pair_plot()
             write_to_file()
         else:
             print("Program only runs when y/Y is entered")
@@ -231,6 +245,6 @@ def main():
     except ValueError as e:
             print(f"Error:",e)
 
-main()
-
+if __name__ == "__main__":
+    main()
 #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d

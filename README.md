@@ -9,20 +9,22 @@ For this markup sheet, I used the following websites as guides.<br>
 
 <H1>Introduction</H1>
 </p>This project is using the Iris datset and is widely used as introductory dataset, similar to the "Hello World" program. The dataset has measurements in centimetres for 50 flowers from 3 species. The Species are:</p>
-
+<p>
 <li>Iris-setosa</li>
 <li>Iris-versicolor</li>
 <li>Iris-virginica</li>
-
+</p>
 <p>I have imported this dataset, and is saved in a file called <em>iris_data.csv</em>The columns in this dataset are as follows</p>
+<p>
 <li>Petal Lenght</li>
 <li>Petal Width</li>
 <li>Sepal Length</li>
 <li>Sepal Width</li>
 <li>Type</li>
+</p>
 <H1>Analysis</H1>
 
-<p>The following analysis is calculted when program is run, and the output is saved to the following file <em>summary.txt</em>
+<p>The following analysis is performed when program is run, and the output is saved to the following file <em>summary.txt</em>
 <li>Sum, Mean & Median of each column</li>
 <li>Initial 5 rows using .head()</li>
 <li>Count of each type using .value_counts()</li>
@@ -48,12 +50,11 @@ For this markup sheet, I used the following websites as guides.<br>
 <li>Petal_Width_histogram.png</li>
 
 <H1>Histogram Conclusion</H1>
-<p>Some useful information that can be visualised from these</p>
+<p>Some useful information that can be visualised from these histograms</p>
 <li>Petal width of setosa is below .5</li>
 <li>Petal width of virginica is typically largest of 3 types</li>
 <li>Petal Lenght of setosa is between 1 & 2</li>
 <li>Sepal width has wider range of values than sepal lenght</li>
-
 
 <H1>Scatter</H1>
 <p>The program generates 3 Scatter plots and the output is saved to individual .png files. These compare the following values
@@ -66,8 +67,8 @@ For this markup sheet, I used the following websites as guides.<br>
 <p>The following information can be gleaned from these scatter plots</p>
 
 <li>As Sepal lenght increases, petal lenght also tends to increase</li>
-<li>As Petal lenght increases, petal Width also tends to increase</li>
-<li>As Petal lenght increases, sepal Width also tends to derease</li>
+<li>As Petal lenght increases, petal width also tends to increase</li>
+<li>As Petal lenght increases, sepal width tends to derease</li>
 
 <H1>Box</H1>
 <p>The program generates 4 Box plots, for Sepal Lenght,Seapl Width,Petal Lenght & Petal Width. The box plots are displayed and output is saved to individual .png files. These files are as follows:
@@ -80,7 +81,7 @@ For this markup sheet, I used the following websites as guides.<br>
 <p>The following information can be gleaned from these box plots</p>
 
 <li>The range of sepal lenghts is widest for iris Virginica & smallest for iris Setosa</li>
-<li>The range of sepal widths is widest for iris Setosa & smallest for iris Virginica<li>
+<li>The range of sepal widths is widest for iris Setosa & smallest for iris Virginica</li>
 <li>The range of petal lenghts is widest for iris Virginica & smallest for iris Setosa </li>
 <li>The range of petal widths is widest for iris Virginica & smallest for iris Setosa </li>
 
@@ -89,16 +90,23 @@ For this markup sheet, I used the following websites as guides.<br>
 
 <H1>Conclusion</H1>
 <p>The Iris dataset is well documented and consists of measurements of Sepal Lenght,Seapl Width,Petal Lenght & Petal Width for three different species;</p>
+<p>
 <li>Iris-setosa</li>
 <li>Iris-versicolor</li>
-<li>Iris-virginica</li> 
+<li>Iris-virginica</li>
+</p> 
 <p>The following conlusions are the most interest i have found over the course of this prohect</p>
 <ol>
 <li>The Petal measurements are typically more useful in identifying species compared to sepal measurements</li>
 <li>The Setosa species is easiest to identify due to smaller size</li>
 <li>The Versicolr & Virginica species are hardest to identify</li> 
 
-
+<H1>How to run program</HI>
+<ol>
+<li>$ python analysis</li>
+<li>type "y" or "Y " to run</li>
+<li>close each image after viewing</li> 
+<li>.png & .txt files have been updated</li> 
 
 
 <H1>References</H1>
