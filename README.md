@@ -12,7 +12,7 @@ For this markup sheet, I used the following websites as guides.<br>
     1. [Introduction](#Introduction)
     2. [Analysis](#Analysis)
     3. [Histogram](#Histogram)
-    4. [Histogram Conclusion](#HistogramConclusion)
+    4. [Histogram Conclusion](#Histogram Conclusion)
     5. [Scatter](#Scatter) 
     6. [Scatter plot Conclusion](#ScatterplotConclusion)
     7. [Box Plots](#BoxPlots)
@@ -129,21 +129,20 @@ For this markup sheet, I used the following websites as guides.<br>
 
 
 
-<H1>How to run program</HI>
+# How to run program #
 <ol>
 <li>$ python analysis</li>
-<li>type "y" or "Y " to run</li>
-<li>close each image after viewing</li> 
+<li>individual images open. close each image after viewing by clicking "x" on image</li> 
 <li>.png & .txt files have been updated</li> 
 
 
-<H1>References</H1>
+# References # 
 <ol>
-<li></li>
-<li>https://www.kaggle.com/datasets/vikrishnan/iris-dataset</li>
-<li>https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/</li>
+<li><a href="#">https://www.kaggle.com/datasets/vikrishnan/iris-dataset</a></li>
+<li><a href="#">https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data</a></li>
+<li>https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-dat</a></li>
 <li>https://medium.com/@naidubhavya06/detailed-explanation-of-exploratory-data-analysis-using-iris-dataset-fa8082a4ce0f</li>
-<li>  </li>
+<li> <li><a href="#">https://www.markdownguide.org/basic-syntax</a></li> </li>
 <li>  </li>
 <li>  </li>
 <li>  </li>
