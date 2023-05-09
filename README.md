@@ -68,7 +68,7 @@ For this markup sheet, I used the following websites as guides.<br>
 <li>Petal_Lenght_histogram.png</li>
 <li>Petal_Width_histogram.png</li>
 
-# HistogramConclusion #
+# Histogram Conclusion #
 <p>Some useful information that can be visualised from these histograms</p>
 <li>Petal width of setosa is below .5</li>
 <li>Petal width of virginica is typically largest of 3 types</li>
