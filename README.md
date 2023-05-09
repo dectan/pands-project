@@ -28,7 +28,7 @@ For this markup sheet, I used the following websites as guides.<br>
 <li>Iris-setosa</li>
 <li>Iris-versicolor</li>
 <li>Iris-virginica</li>
-<p> <img src = "https://github.com/dectan/pands-project/blob/main/images.py" ></p>
+<p> <img src = "https://machinelearninghd.com/wp-content/uploads/2021/03/iris-dataset.png"></p>
 
 </p>
 <p>I have imported this dataset, and is saved in a file called <em>iris_data.csv</em>The columns in this dataset are as follows</p>
