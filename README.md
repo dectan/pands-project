@@ -12,9 +12,9 @@ For this markup sheet, I used the following websites as guides.<br>
     1. [Introduction](#Introduction)
     2. [Analysis](#Analysis)
     3. [Histogram](#Histogram)
-    4. [Histogram Conclusion](#Histogram Conclusion)
+    4. [HistogramConclusion](#Histogram Conclusion)
     5. [Scatter](#Scatter) 
-    6. [Scatter plot Conclusion](#ScatterplotConclusion)
+    6. [Scatter plot Conclusion](#Scatter plot Conclusion)
     7. [Box Plots](#BoxPlots)
     8. [Box Plot Conclusion](#BoxPlotConclusion)
     9. [Pair Plot ](#PairPlot)
@@ -28,7 +28,7 @@ For this markup sheet, I used the following websites as guides.<br>
 <li>Iris-setosa</li>
 <li>Iris-versicolor</li>
 <li>Iris-virginica</li>
-<p> <img src = "https://machinelearninghd.com/wp-content/uploads/2021/03/iris-dataset.png"></p>
+<p> <img src = "https://machinelearninghd.com/wp-content/uploads/2021/03/iris-dataset.png"> alt = "iris dataset"</p>
 
 </p>
 <p>I have imported this dataset, and is saved in a file called <em>iris_data.csv</em>The columns in this dataset are as follows</p>
@@ -68,7 +68,7 @@ For this markup sheet, I used the following websites as guides.<br>
 <li>Petal_Lenght_histogram.png</li>
 <li>Petal_Width_histogram.png</li>
 
-# Histogram Conclusion #
+# HistogramConclusion #
 <p>Some useful information that can be visualised from these histograms</p>
 <li>Petal width of setosa is below .5</li>
 <li>Petal width of virginica is typically largest of 3 types</li>
