@@ -227,23 +227,12 @@ def pair_plot():
     sns.pairplot(iris, hue="type",height = 3)
     plt.savefig("pairplot.png")
     plt.show()
-def main():
-    try:
-        user_input = str(input("Run Program?"))
-        if (user_input == "y" or user_input == "Y"):
-            print("program running")
-           
+def main():           
             hist()
-            #write_to_file()
             scatter()
             box()
             pair_plot()
-            write_to_file()
-        else:
-            print("Program only runs when y/Y is entered")
-            
-    except ValueError as e:
-            print(f"Error:",e)
+            write_to_file()            
 
 if __name__ == "__main__":
     main()
