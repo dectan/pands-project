@@ -18,8 +18,9 @@ For this markup sheet, I used the following websites as guides.<br>
     7. [Box Plots](#BoxPlots)
     8. [Box Plot Conclusion](#BoxPlotConclusion)
     9. [Pair Plot ](#PairPlot)
-    9. [Pair Plot Conclusion](#PairPlotConclusion)
-    10. [Conclusion](#Conclusion)
+    10. [PairPlotConclusion](#PairPlotConclusion)
+    11. [How to run program](#How to run program)
+    11. [Conclusion](#Conclusion)
 
 # Introduction #
 </p>This project is using the Iris datset and is widely used as introductory dataset, similar to the "Hello World" program. The dataset has measurements in centimetres for 50 flowers from 3 species. The Species are:</p>
@@ -51,9 +52,9 @@ For this markup sheet, I used the following websites as guides.<br>
 <li>Mean of each column</li>
 <li>Standard Deviation of each colum</li>
 <li>min of each colum</li>
-<li>25 %</li>
-<li>50%</li>
-<li>75%</li>
+<li>25% Percentile</li>
+<li>50% Percentile</li>
+<li>75% Percentile</li>
 <li>max</li>
 </ol>
 </p>
@@ -125,7 +126,6 @@ For this markup sheet, I used the following websites as guides.<br>
 <li>The Petal measurements are typically more useful in identifying species compared to sepal measurements</li>
 <li>The Setosa species is easiest to identify due to smaller size</li>
 <li>The Versicolr & Virginica species are hardest to identify</li> 
-
 
 
 
