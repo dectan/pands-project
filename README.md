@@ -142,10 +142,24 @@ For this markup sheet, I used the following websites as guides.<br>
 <ol>
 <li><a href="#">https://www.kaggle.com/datasets/vikrishnan/iris-dataset</a></li>
 <li><a href="#">https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data</a></li>
-<li>https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-dat</a></li>
-<li>https://medium.com/@naidubhavya06/detailed-explanation-of-exploratory-data-analysis-using-iris-dataset-fa8082a4ce0f</li>
-<li> <li><a href="#">https://www.markdownguide.org/basic-syntax</a></li> </li>
-<li>  </li>
-<li>  </li>
-<li>  </li>
-<li>  </li>
+<li><a hef ="#">ttps://medium.com/@naidubhavya06/detailed-explanation-of-exploratory-data-analysis-using-iris-dataset-fa8082a4ce0f</a></li>
+<li><a hef ="#">https://www.markdownguide.org/basic-syntax</a></li>
+<li><a hef ="#">https://stackoverflow.com/questions/34926517/stop-sys-stdout-from-writing-to-a-text-file</a></li>
+<li><a hef ="#">https://www.w3schools.com/python/pandas/ref_df_describe.asp</a></li>
+<li><a hef ="#"></a>https://www.bing.com/videos/search?q=histograms+iris+data+set+different+colours+python&qpvt=histograms+iris+data+set+different+colours+python&view=detail&mid=A11A51CDECB7554E9784A11A51CDECB7554E9784&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dhistograms%2Biris%2Bdata%2Bset%2Bdifferent%2Bcolours%2Bpython%26qpvt%3Dhistograms%2Biris%2Bdata%2Bset%2Bdifferent%2Bcolours%2Bpython%26FORM%3DVDRE</li>
+<li><a hef ="#">https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/</a></li>
+<li><a hef ="#">https://stackoverflow.com/questions/43872450/matplotlib-histogram-with-multiple-legend-entries</a></li>
+<li><a hef ="#">https://www.statology.org/matplotlib-boxplot-by-group/</a></li>
+<li><a hef ="#">https://seaborn.pydata.org/generated/seaborn.scatterplot.html</a></li>
+<li><a hef ="#">https://www.youtube.com/watch?v=b7JuBsswDlo</a></li>
+<li><a hef ="#">https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d</a></li>
+<li><a hef ="#"></a></li>
+<li><a hef ="#"></a></li>
+<li><a hef ="#"></a></li>
+<li><a hef ="#"></a></li>
+<li><a hef ="#"></a></li>
+<li><a hef ="#"></a></li>
+<li><a hef ="#"></a></li>
+<li><a hef ="#"></a></li>
+<li><a hef ="#"></a></li>
+<li><a hef ="#"></a></li>

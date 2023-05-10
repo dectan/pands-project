@@ -7,11 +7,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import sys
 
-
-
-
-
-
 #import csv
 #assign column names to iris_data.csv
 col=['sepal_length','sepal_width','petal_length','petal_width','type']
@@ -70,8 +65,6 @@ def write_to_file():
     print(iris.describe())
     print("******************")
     sys.stdout.close()
-
-#print("summary.txt file is closed")
 
 #https://www.bing.com/videos/search?q=histograms+iris+data+set+different+colours+python&qpvt=histograms+iris+data+set+different+colours+python&view=detail&mid=A11A51CDECB7554E9784A11A51CDECB7554E9784&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dhistograms%2Biris%2Bdata%2Bset%2Bdifferent%2Bcolours%2Bpython%26qpvt%3Dhistograms%2Biris%2Bdata%2Bset%2Bdifferent%2Bcolours%2Bpython%26FORM%3DVDRE
 #https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
