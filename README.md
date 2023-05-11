@@ -10,6 +10,7 @@ For this markup sheet, I used the following websites as guides.<br>
 # **Table of contents**
 * [Iris Dataset](Iris Dataset)
     1. [Introduction](#Introduction)
+    2. [About the Dateset](#About-the-Dateset)
     2. [Analysis](#Analysis)
     3. [Histogram](#Histogram)
     4. [Histogram Conclusion](#Histogram-Conclusion)
@@ -23,15 +24,24 @@ For this markup sheet, I used the following websites as guides.<br>
     11. [Conclusion](#Conclusion)
 
 # Introduction #
-</p>This project is using the Iris datset and is widely used as introductory dataset, similar to the "Hello World" program. The dataset has measurements in centimetres for 50 flowers from 3 species. The Species are:</p>
+</p>This project is using the Iris datset and is widely used as an introductory dataset, similar to the "Hello World" program. The dataset has measurements in centimetres for 50 flowers from 3 species. The Species are:</p>
 <p>
 <li>Iris-setosa</li>
 <li>Iris-versicolor</li>
 <li>Iris-virginica</li>
-<p> <img src = "https://machinelearninghd.com/wp-content/uploads/2021/03/iris-dataset.png"> alt = "iris dataset"</p>
+<p> <img src = "https://machinelearninghd.com/wp-content/uploads/2021/03/iris-dataset.png"> </p>
 
-</p>
-<p>I have imported this dataset, and is saved in a file called <em>iris_data.csv</em>The columns in this dataset are as follows</p>
+<p>The Iris Dataset or Fisher's Iris dataset was introduced in 1936 by Ronald Fisher. It is also known as Anderson's Iris dataset as Edgar Anderson collected the data. From researching this dataset, i found that two out of three species were collected in same Peninsula, and picked on the same day, and also measured at the same time using the same apparatus.</p> 
+
+Ronald Fisher
+<p> <img src = "https://www.bing.com/images/search?view=detailV2&ccid=3t%2fpNiSO&id=AABB6636899BF337C08BCDA706969B179535FF6B&thid=OIP.3t_pNiSOyfOXtFt2bl9uIAHaJY&mediaurl=https%3a%2f%2f1.bp.blogspot.com%2f--hoILVYGYUk%2fWOpR7CLPB1I%2fAAAAAAAAHMc%2fxGFp6i043doQp_SeOVNSQJK78sqqweX_gCLcB%2fs1600%2fBiologist_and_statistician_Ronald_Fisher.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.dedfe936248ec9f397b45b766e5f6e20%3frik%3da%252f81lReblganzQ%26pid%3dImgRaw%26r%3d0&exph=1231&expw=971&q=ronald+fisher+iris&simid=608020915513662398&FORM=IRPRST&ck=D4FC914717F89A11D170624F773F21FE&selectedIndex=25&ajaxhist=0&ajaxserp=0"> </p>
+
+# About the Dateset # 
+<p>I have saved the Iris dataset in this ripository, and and can be in a file called <em>iris_data.csv</em>. This file is read using the following code.</p>
+<p>iris=pd.read_csv("iris_data.csv",names=col)</p>
+<p>As there are no column names in this dataset,I have asssigned column names using the following</p>
+<p>col=['sepal_length','sepal_width','petal_length','petal_width','type']</p>
+<p>The columns in this dataset are as follows</p>
 <p>
 <li>Petal Lenght</li>
 <li>Petal Width</li>
@@ -39,9 +49,9 @@ For this markup sheet, I used the following websites as guides.<br>
 <li>Sepal Width</li>
 <li>Type</li>
 </p>
+<p>There are 150 samples, with 50 each per flower type. This means that the dataset is balanced.
 
 # Analysis #
-
 <p>The following analysis is performed when program is run, and the output is saved to the following file <em>summary.txt</em>
 <li>Sum, Mean & Median of each column</li>
 <li>Initial 5 rows using .head()</li>
@@ -124,11 +134,12 @@ For this markup sheet, I used the following websites as guides.<br>
 <li>Iris-virginica</li>
 </p> 
 <p>The following conlusions are the most interest i have found over the course of this prohect</p>
+<p>
 <ol>
 <li>The Petal measurements are typically more useful in identifying species compared to sepal measurements</li>
 <li>The Setosa species is easiest to identify due to smaller size</li>
 <li>The Versicolr & Virginica species are hardest to identify</li> 
-
+</p>
 
 
 # How to run program #
