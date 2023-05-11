@@ -139,6 +139,7 @@ Ronald Fisher
 <li>The Petal measurements are typically more useful in identifying species compared to sepal measurements</li>
 <li>The Setosa species is easiest to identify due to smaller size</li>
 <li>The Versicolr & Virginica species are hardest to identify</li> 
+</ol>
 </p>
 
 
