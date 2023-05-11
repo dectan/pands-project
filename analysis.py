@@ -213,6 +213,8 @@ def petal_width_hist():
     plt.savefig('petal_width_histogram.png')
     plt.show()
 
+
+
 #https://www.youtube.com/watch?v=b7JuBsswDlo
 def pair_plot():
     plt.figure(figsize = (9,9)) 
@@ -220,7 +222,8 @@ def pair_plot():
     sns.pairplot(iris, hue="type",height = 3)
     plt.savefig("pairplot.png")
     plt.show()
-def main():           
+def main():      
+                
             hist()
             scatter()
             box()

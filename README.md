@@ -108,17 +108,16 @@ Ronald Fisher
 
  # Box Plot Conclusion</H1>
 <p>The following information can be gleaned from these box plots</p>
-
+<p>
 <li>The range of sepal lenghts is widest for iris Virginica & smallest for iris Setosa</li>
 <li>The range of sepal widths is widest for iris Setosa & smallest for iris Virginica</li>
 <li>The range of petal lenghts is widest for iris Virginica & smallest for iris Setosa </li>
-<li>The range of petal widths is widest for iris Virginica & smallest for iris Setosa </li>
-
+<li>The range of petal widths is widest for iris Virginica & smallest for iris Setosa </li></p>
 <p>Iris Setosa generally has the smallest measurements compared to other two species.</p>
 
 # Pair Plot #
 
-<p>The program generates a Pair plot, for Sepal Lenght,Seapl Width,Petal Lenght & Petal Width. Thepair plot allows easy visualisation of the relationships between pairs of variables. The output of the pairplot is saved in a .png file called pairplot.png</p>
+<p>The program generates a Pair plot, for Sepal Lenght,Seapl Width,Petal Lenght & Petal Width. The pair plot allows easy visualisation of the relationships between pairs of variables. The output of the pairplot is saved in a .png file called pairplot.png</p>
 
 # Pair Plot Conclusion #
 <li>Setosa normally has shorter Sepal Lenght and wider Sepal width compared to other species</li>
@@ -133,7 +132,7 @@ Ronald Fisher
 <li>Iris-versicolor</li>
 <li>Iris-virginica</li>
 </p> 
-<p>The following conlusions are the most interest i have found over the course of this prohect</p>
+<p>The following conlusions are the most interesting I have found over the course of this prohect</p>
 <p>
 <ol>
 <li>The Petal measurements are typically more useful in identifying species compared to sepal measurements</li>
@@ -146,7 +145,7 @@ Ronald Fisher
 # How to run program #
 <ol>
 <li>$ python analysis</li>
-<li>individual images open. close each image after viewing by clicking "x" on image</li> 
+<li>individual images open. Close each image after viewing by clicking "x" on image</li> 
 <li>.png & .txt files have been updated</li> 
 </ol>
 
@@ -154,7 +153,7 @@ Ronald Fisher
 <ol>
 <li><a href="#">https://www.kaggle.com/datasets/vikrishnan/iris-dataset</a></li>
 <li><a href="#">https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data</a></li>
-<li><a hef ="#">ttps://medium.com/@naidubhavya06/detailed-explanation-of-exploratory-data-analysis-using-iris-dataset-fa8082a4ce0f</a></li>
+<li><a hef ="#">https://medium.com/@naidubhavya06/detailed-explanation-of-exploratory-data-analysis-using-iris-dataset-fa8082a4ce0f</a></li>
 <li><a hef ="#">https://www.markdownguide.org/basic-syntax</a></li>
 <li><a hef ="#">https://stackoverflow.com/questions/34926517/stop-sys-stdout-from-writing-to-a-text-file</a></li>
 <li><a hef ="#">https://www.w3schools.com/python/pandas/ref_df_describe.asp</a></li>
