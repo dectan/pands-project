@@ -147,7 +147,7 @@ Ronald Fisher
 <li>$ python analysis</li>
 <li>individual images open. close each image after viewing by clicking "x" on image</li> 
 <li>.png & .txt files have been updated</li> 
-
+</ol>
 
 # References # 
 <ol>
@@ -174,3 +174,4 @@ Ronald Fisher
 <li><a hef ="#"></a></li>
 <li><a hef ="#"></a></li>
 <li><a hef ="#"></a></li>
+</ol>
