@@ -153,7 +153,7 @@ def scatter():
     scatter_sep_wid_v_pet_length()
 
 def sepal_length_hist():
-    plt.figure(figsize = (10,10))
+    #plt.figure(figsize = (9,9))
     iris_s = iris[iris.type == "Iris-setosa"]
     iris_vers = iris[iris.type == "Iris-versicolor"]
     iris_virg = iris[iris.type == "Iris-virginica"]  
@@ -169,7 +169,7 @@ def sepal_length_hist():
     
 #Histogram for Sepal Width
 def sepal_width_hist():
-    plt.figure(figsize = (10,10))
+    #plt.figure(figsize = (9,9))
     plt.hist(iris_s["sepal_width"],label = "Iris setosa", color = "black",alpha=1)
     plt.hist(iris_vers["sepal_width"],label = "Iris versicolor", color = "blue",alpha=.5)
     plt.hist(iris_virg["sepal_width"],label = "Iris virginica", color = "yellow",alpha=.6)
@@ -182,7 +182,7 @@ def sepal_width_hist():
     
 #Histogram for Petal Length
 def petal_length_hist():
-    plt.figure(figsize = (10,10))
+    #plt.figure(figsize = (5,5)) 
     plt.hist(iris_s["petal_length"],  label = "Iris setosa", color = "black",alpha=1)
     plt.hist(iris_vers["petal_length"],  label = "Iris versicolor", color = "blue",alpha =.5)
     plt.hist(iris_virg["petal_length"],  label = "Iris virginica", color = "yellow",alpha=.6)
@@ -195,7 +195,7 @@ def petal_length_hist():
     
 #Histogram for Petal Width
 def petal_width_hist():  
-    plt.figure(figsize = (9,9))  
+    #plt.figure(figsize = (5,5)) 
     plt.hist(iris_s["petal_width"],  label = "Iris setosa", color = "black",alpha=1)
     plt.hist(iris_vers["petal_width"],  label = "Iris versicolor", color = "blue",alpha=.5)
     plt.hist(iris_virg["petal_width"],  label = "Iris virginica", color = "yellow",alpha=.6)
@@ -208,7 +208,7 @@ def petal_width_hist():
 
 #https://www.youtube.com/watch?v=b7JuBsswDlo
 def pair_plot():
-    plt.figure(figsize = (9,9)) 
+    #plt.figure(figsize = (4,4)) 
     sns.set(style="whitegrid")
     sns.pairplot(iris, hue="type",height = 3)
     plt.savefig("pairplot.png")
