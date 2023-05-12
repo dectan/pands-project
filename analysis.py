@@ -21,12 +21,12 @@ iris_virg = iris[iris.type == "Iris-virginica"]
 def write_to_file():
     print("******************")
     sys.stdout = open ("summary.txt","w")
-    #calculate sum/mean/median of sepal lenght
+    #calculate sum/mean/median of sepal length
     print("******************")
     sum_data = iris['sepal_length'].sum()
     mean_data = iris["sepal_length"].mean()
     median_data = iris["sepal_length"].median()
-    print("Sum of sepal lenght:",sum_data, "\nMean of sepal lenght:", mean_data, "\nMedian of sepal lenght:",median_data)
+    print("Sum of sepal length:",sum_data, "\nMean of sepal length:", mean_data, "\nMedian of sepal length:",median_data)
     print("******************")
     #calculate sum/mean/median of sepal width
     sum_data = iris['sepal_width'].sum()
@@ -34,7 +34,7 @@ def write_to_file():
     median_data = iris["sepal_width"].median()
     print("Sum of sepal width:",sum_data, "\nMean of sepal width:", mean_data, "\nMedian of sepal width:",median_data)
     print("******************")
-    #calculate sum/mean/median of petal lenght
+    #calculate sum/mean/median of petal length
     sum_data = iris['petal_length'].sum()
     mean_data = iris["petal_length"].mean()
     median_data = iris["petal_length"].median()
@@ -72,7 +72,7 @@ def write_to_file():
 #fix legend issus @https://stackoverflow.com/questions/43872450/matplotlib-histogram-with-multiple-legend-entries
 
 def hist():
-    sepal_lenght_hist()
+    sepal_length_hist()
     sepal_width_hist()
     petal_length_hist()
     petal_width_hist()
@@ -80,18 +80,18 @@ def hist():
     return
 
 def box():
-    sepal_lenght_box()
+    sepal_length_box()
     sepal_width_box()
-    petal_lenght_box()
+    petal_length_box()
     petal_width_box()
     return
 
 #https://www.statology.org/matplotlib-boxplot-by-group/
-def sepal_lenght_box():
+def sepal_length_box():
     sns.set(style='whitegrid') # set style of the plot
 # create box plot
     sns.boxplot(x='type', y='sepal_length', data=iris)
-    plt.savefig("sepal_lenght_box.png")
+    plt.savefig("sepal_length_box.png")
     plt.show()
     return
 def sepal_width_box():
@@ -101,11 +101,11 @@ def sepal_width_box():
     plt.savefig("sepal_width_box.png")
     plt.show()
     return
-def petal_lenght_box():
+def petal_length_box():
     sns.set(style='whitegrid') # set style of the plot
 # create box plot
     sns.boxplot(x='type', y='petal_length', data=iris)
-    plt.savefig("petal_lenght_box.png")
+    plt.savefig("petal_length_box.png")
     plt.show()
     return
 def petal_width_box():
@@ -115,34 +115,43 @@ def petal_width_box():
     plt.savefig("petal_width_box.png")
     plt.show()
     return
-#scatterplot Sepal Lenght & Sepal Width
+#scatterplot Sepal Length & Sepal Width
 #https://seaborn.pydata.org/generated/seaborn.scatterplot.html
 
 def scatter_sep_len_v_wid():
     sns.scatterplot(x='sepal_length', y='sepal_width', data=iris, hue = "type",palette = ["green","blue","yellow"])
-    plt.title('Sepal Lenght v. Sepal Width')
+    plt.title('Sepal Length v. Sepal Width')
     plt.xlabel('sepal_length')
     plt.ylabel('sepal_width')
-    plt.savefig("sepal_lenght_v_sepal_width_scatter.png")
+    plt.savefig("sepal_length_v_sepal_width_scatter.png")
     plt.show()
+def scatter_sep_len_v_pet_len():
+    sns.scatterplot(x='sepal_length', y='petal_length', data=iris, hue = "type",palette = ["green","blue","yellow"])
+    plt.title('Sepal Length v. Petal_Length')
+    plt.xlabel('sepal_length')
+    plt.ylabel('petal_length')
+    plt.savefig("Sepal Length v. Petal_Length_scatter.png")
+    plt.show()
+
+
     
 #scatterplt sepal_length & petal_length
 def scatter_sep_len_v_pet_wid():
     sns.scatterplot(x='sepal_length', y='petal_length', data=iris, hue = "type",palette = ["green","blue","yellow"])
-    plt.title('Sepal Lenght v. Petal Lenght')
+    plt.title('Sepal Length v. Petal Length')
     plt.xlabel('sepal_length')
     plt.ylabel('petal_length')
-    plt.savefig("sepal_lenght_v_petal_width_scatter.png")
+    plt.savefig("sepal_length_v_petal_width_scatter.png")
     plt.show()
 
 #scatterplt sepal_width & petal_width
 
 def scatter_sep_len_v_wid():
     sns.scatterplot(x='sepal_length', y='sepal_width', data=iris, hue = "type",palette = ["green","blue","yellow"])
-    plt.title('Sepal Lenght v. Sepal Width')
+    plt.title('Sepal Length v. Sepal Width')
     plt.xlabel('sepal_length')
     plt.ylabel('sepal_width')
-    plt.savefig("sepal_lenght_v_sepal_width_scatter.png")
+    plt.savefig("sepal_length_v_sepal_width_scatter.png")
     plt.show()
 
 def scatter_sep_wid_v_pet_wid():
@@ -158,8 +167,9 @@ def scatter():
     scatter_sep_len_v_wid()
     scatter_sep_len_v_pet_wid()
     scatter_sep_wid_v_pet_wid()
+    scatter_sep_len_v_pet_len()
 
-def sepal_lenght_hist():
+def sepal_length_hist():
     plt.figure(figsize = (10,10))
     iris_s = iris[iris.type == "Iris-setosa"]
     iris_vers = iris[iris.type == "Iris-versicolor"]
@@ -171,7 +181,7 @@ def sepal_lenght_hist():
     plt.xlabel("Sepal Length cm")
     plt.ylabel("Count")
     plt.legend(["Iris setosa","Iris versicolor","Iris virginica"])
-    plt.savefig("sepal_lenght_histogram.png")
+    plt.savefig("sepal_length_histogram.png")
     plt.show()
     
 #Histogram for Sepal Width

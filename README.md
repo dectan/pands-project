@@ -84,7 +84,7 @@ Ronald Fisher
 <li>Petal width of setosa is usually below .5</li>
 <li>Petal width of virginica is typically largest of 3 types</li>
 <li>Petal Lenght of setosa is between 1 & 2</li>
-<li>Sepal width indicates roughly normal distribution, with </li>
+<li>Sepal width indicates roughly normal distribution between 3.0 & 3.5</li>
 
 # Scatter #
 <p>The program generates 3 Scatter plots and the output is saved to individual .png files. These compare the following values
@@ -96,6 +96,7 @@ Ronald Fisher
 # Scatter plot Conclusion #
 <p>The following information can be gleaned from these scatter plots</p>
 
+<li>No strong relationship between Sepal lenght and Sepal Width</li>
 <li>As Sepal lenght increases, petal lenght also tends to increase</li>
 <li>As Petal lenght increases, petal width also tends to increase</li>
 <li>As Petal lenght increases, sepal width tends to derease</li>

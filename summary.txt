@@ -1,7 +1,7 @@
 ******************
-Sum of sepal lenght: 876.5 
-Mean of sepal lenght: 5.843333333333335 
-Median of sepal lenght: 5.8
+Sum of sepal length: 876.5 
+Mean of sepal length: 5.843333333333335 
+Median of sepal length: 5.8
 ******************
 Sum of sepal width: 458.1 
 Mean of sepal width: 3.0540000000000007 
