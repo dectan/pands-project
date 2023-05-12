@@ -46,19 +46,13 @@ def write_to_file():
     median_data = iris["petal_width"].median()
     print("Sum of petal width:",sum_data, "\nMean of petal width:", mean_data, "\nMedian of petal width:",median_data)
     print("******************")
-
-#print initial 5 rows
     print("Initial 5 Rows")
     print(iris.head())
     print("******************")
-#print column titles
     print("columns in this table are",iris.columns)
     print("******************")
-#print count of each type
     print("count of each type is\n",iris.type.value_counts())
     print("******************")
-
-#print qty rows,columns
     print("shape of this table is :",iris.shape)
     print("******************")
 #https://www.w3schools.com/python/pandas/ref_df_describe.asp
@@ -76,7 +70,6 @@ def hist():
     sepal_width_hist()
     petal_length_hist()
     petal_width_hist()
-    #
     return
 
 def box():
@@ -125,6 +118,7 @@ def scatter_sep_len_v_wid():
     plt.ylabel('sepal_width')
     plt.savefig("sepal_length_v_sepal_width_scatter.png")
     plt.show()
+
 def scatter_sep_len_v_pet_len():
     sns.scatterplot(x='sepal_length', y='petal_length', data=iris, hue = "type",palette = ["green","blue","yellow"])
     plt.title('Sepal Length v. Petal_Length')
@@ -133,41 +127,30 @@ def scatter_sep_len_v_pet_len():
     plt.savefig("Sepal Length v. Petal_Length_scatter.png")
     plt.show()
 
-
-    
 #scatterplt sepal_length & petal_length
 def scatter_sep_len_v_pet_wid():
-    sns.scatterplot(x='sepal_length', y='petal_length', data=iris, hue = "type",palette = ["green","blue","yellow"])
-    plt.title('Sepal Length v. Petal Length')
+    sns.scatterplot(x='sepal_length', y='petal_width', data=iris, hue = "type",palette = ["green","blue","yellow"])
+    plt.title('Sepal Length v. Petal width')
     plt.xlabel('sepal_length')
-    plt.ylabel('petal_length')
+    plt.ylabel('petal_width')
     plt.savefig("sepal_length_v_petal_width_scatter.png")
     plt.show()
 
 #scatterplt sepal_width & petal_width
-
-def scatter_sep_len_v_wid():
-    sns.scatterplot(x='sepal_length', y='sepal_width', data=iris, hue = "type",palette = ["green","blue","yellow"])
-    plt.title('Sepal Length v. Sepal Width')
-    plt.xlabel('sepal_length')
-    plt.ylabel('sepal_width')
-    plt.savefig("sepal_length_v_sepal_width_scatter.png")
-    plt.show()
-
-def scatter_sep_wid_v_pet_wid():
-    sns.scatterplot(x='sepal_width', y='petal_width', data=iris, hue = "type",palette = ["green","blue","yellow"])
-    plt.title('sepal_width v petal_width')
+def scatter_sep_wid_v_pet_length():
+    sns.scatterplot(x='sepal_width', y='petal_length', data=iris, hue = "type",palette = ["green","blue","yellow"])
+    plt.title('sepal_width v petal_length')
     plt.xlabel('sepal_width')
-    plt.ylabel('petal_width')
-    plt.savefig("sepal_width_v_petalal_width_scatter.png")
+    plt.ylabel('petal_length')
+    plt.savefig("sepal_width_v_petal_length_scatter.png")
     plt.show()
     #print("programme running")
 
 def scatter():
-    scatter_sep_len_v_wid()
-    scatter_sep_len_v_pet_wid()
-    scatter_sep_wid_v_pet_wid()
-    scatter_sep_len_v_pet_len()
+    scatter_sep_len_v_wid() #
+    scatter_sep_len_v_pet_len() #
+    scatter_sep_len_v_pet_wid() #
+    scatter_sep_wid_v_pet_length()
 
 def sepal_length_hist():
     plt.figure(figsize = (10,10))
@@ -223,8 +206,6 @@ def petal_width_hist():
     plt.savefig('petal_width_histogram.png')
     plt.show()
 
-
-
 #https://www.youtube.com/watch?v=b7JuBsswDlo
 def pair_plot():
     plt.figure(figsize = (9,9)) 
@@ -232,8 +213,7 @@ def pair_plot():
     sns.pairplot(iris, hue="type",height = 3)
     plt.savefig("pairplot.png")
     plt.show()
-def main():      
-                
+def main():                    
             hist()
             scatter()
             box()

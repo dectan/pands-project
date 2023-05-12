@@ -87,10 +87,12 @@ Ronald Fisher
 <li>Sepal width indicates roughly normal distribution between 3.0 & 3.5</li>
 
 # Scatter #
-<p>The program generates 3 Scatter plots and the output is saved to individual .png files. These compare the following values
+<p>The program generates 4 Scatter plots and the output is saved to individual .png files. These compare the following values
 <li>Sepal_Lenght v Sepal Width</li>
-<li>Sepal_Lenght v Petal Lenght</li>
+<li>Sepal_Lenght v Petal Length</li>>
 <li>Sepal_Lenght v Petal Width</li>
+<li>Sepal_Lenght v Petal Width</li>
+
 </p>
 
 # Scatter plot Conclusion #
