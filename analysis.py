@@ -147,9 +147,9 @@ def scatter_sep_wid_v_pet_length():
     #print("programme running")
 
 def scatter():
-    scatter_sep_len_v_wid() #
-    scatter_sep_len_v_pet_len() #
-    scatter_sep_len_v_pet_wid() #
+    scatter_sep_len_v_wid() 
+    scatter_sep_len_v_pet_len() 
+    scatter_sep_len_v_pet_wid() 
     scatter_sep_wid_v_pet_length()
 
 def sepal_length_hist():

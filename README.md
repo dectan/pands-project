@@ -89,10 +89,9 @@ Ronald Fisher
 # Scatter #
 <p>The program generates 4 Scatter plots and the output is saved to individual .png files. These compare the following values
 <li>Sepal_Lenght v Sepal Width</li>
-<li>Sepal_Lenght v Petal Length</li>>
+<li>Sepal_Lenght v Petal Length</li>
 <li>Sepal_Lenght v Petal Width</li>
-<li>Sepal_Lenght v Petal Width</li>
-
+<li>Sepal_width v Petal length</li>
 </p>
 
 # Scatter plot Conclusion #
@@ -136,7 +135,7 @@ Ronald Fisher
 <li>Iris-versicolor</li>
 <li>Iris-virginica</li>
 </p> 
-<p>The following conlusions are the most interesting I have found over the course of this prohect</p>
+<p>This dataset can be used to build classification model to predict the species based on its measurements. By visualising the data, each species and measurements can be easily interrogated. Visualising the data also shows the distribution of dat points for each species.The following conlusions are the most interesting I have found over the course of this prohect</p>
 <p>
 <ol>
 <li>The Petal measurements are typically more useful in identifying species compared to sepal measurements</li>
@@ -193,5 +192,5 @@ Ronald Fisher
 <li><a hef ="#"></a>https://seaborn.pydata.org/</li>
 <li><a hef ="#"></a>https://www.geeksforgeeks.org/python-sys-module/</li>
 <li><a hef ="#"></a>https://www.geeksforgeeks.org/python-sys-module/</li>
-<li><a hef ="#"></a></li>
+
 </ol>
