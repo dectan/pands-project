@@ -11,17 +11,18 @@ For this markup sheet, I used the following websites as guides.<br>
 * [Iris Dataset](Iris Dataset)
     1. [Introduction](#Introduction)
     2. [About the Dateset](#About-the-Dateset)
-    2. [Analysis](#Analysis)
-    3. [Histogram](#Histogram)
-    4. [Histogram Conclusion](#Histogram-Conclusion)
-    5. [Scatter](#Scatter) 
-    6. [Scatter plot Conclusion](#Scatter-Plot-Conclusion)
-    7. [Box Plots](#BoxPlots)
-    8. [Box Plot Conclusion](#Box-Plot-Conclusion)
-    9. [Pair Plot ](#PairPlot)
-    10. [PairPlotConclusion](#Pair-Plot-Conclusion)
-    11. [How to run program](#How-to-run-program)
-    11. [Conclusion](#Conclusion)
+    3. [Analysis](#Analysis)
+    4. [Histogram](#Histogram)
+    5. [Histogram Conclusion](#Histogram-Conclusion)
+    6. [Scatter](#Scatter) 
+    7. [Scatter plot Conclusion](#Scatter-Plot-Conclusion)
+    8. [Box Plots](#BoxPlots)
+    9. [Box Plot Conclusion](#Box-Plot-Conclusion)
+    10. [Pair Plot ](#PairPlot)
+    11. [PairPlotConclusion](#Pair-Plot-Conclusion)
+    12. [How to run program](#How-to-run-program)
+    13. [Conclusion](#Conclusion)
+    14. [Imported Libraries](#Imported-Libraries)
 
 # Introduction #
 </p>This project is using the Iris datset and is widely used as an introductory dataset, similar to the "Hello World" program. The dataset has measurements in centimetres for 50 flowers from 3 species. The Species are:</p>
@@ -149,6 +150,22 @@ Ronald Fisher
 <li>.png & .txt files have been updated</li> 
 </ol>
 
+
+# Imported Libraries #
+
+<ol>
+<li>import numpy as np</li>
+<p> NumPy is short for "Numerical Python". It allows for matematical and logical operations on arrays efficiently. NumPy also enables user to reshape,slice ,stack and join arrays. Broadcasting is a powerful NumPy feature that that allows arithmetic operations between arrays with different sizes.</p>
+<li>import pandas as pd</li>
+<p>Pandas is an open source Python library that provides high performance data manipulation tools and analysis tools. It also allows for reading and writing from various file formats, such as .csv. Pandas has functions for analyzing, cleaning , exploring and manipulating data</p>
+<li>import matplotlib.pyplot as plt</li>
+<p>Matplotlib is a low level graph plotting library in python. It is open source. Using Mathplotlib, different types of plots can be created, such as scatter plots, histograms,box plots etc.</p>
+<li>import seaborn as sns</li>
+<p>Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.It is designed to work well with dataframes from Pandas
+<li>import sys</li>
+<p>sys is a built in module in Python that allows access to common functions and variables that are used to manipulate different parts of the Python runtime environment. A common use are is sys.argv which takes input from user and this input is then used in program</p>
+</ol>
+
 # References # 
 <ol>
 <li><a href="#">https://www.kaggle.com/datasets/vikrishnan/iris-dataset</a></li>
@@ -164,14 +181,14 @@ Ronald Fisher
 <li><a hef ="#">https://seaborn.pydata.org/generated/seaborn.scatterplot.html</a></li>
 <li><a hef ="#">https://www.youtube.com/watch?v=b7JuBsswDlo</a></li>
 <li><a hef ="#">https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d</a></li>
-<li><a hef ="#"></a></li>
-<li><a hef ="#"></a></li>
-<li><a hef ="#"></a></li>
-<li><a hef ="#"></a></li>
-<li><a hef ="#"></a></li>
-<li><a hef ="#"></a></li>
-<li><a hef ="#"></a></li>
-<li><a hef ="#"></a></li>
-<li><a hef ="#"></a></li>
+<li><a hef ="#"></a>https://www.w3schools.com/python/pandas/ref_df_describe.asp</li>
+<li><a hef ="#"></a>histograms & box plots @ https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/</li>
+<li><a hef ="#"></a>adding legend https://www.geeksforgeeks.org/matplotlib-pyplot-legend-in-python/</li>
+<li><a hef ="#"></a>https://numpy.org/doc/stable/user/whatisnumpy.html</li>
+<li><a hef ="#"></a>https://www.w3schools.com/python/pandas/pandas_intro.asp</li>
+<li><a hef ="#"></a>https://www.w3schools.com/python/seaborn_intro.asp</li>
+<li><a hef ="#"></a>https://seaborn.pydata.org/</li>
+<li><a hef ="#"></a>https://www.geeksforgeeks.org/python-sys-module/</li>
+<li><a hef ="#"></a>https://www.geeksforgeeks.org/python-sys-module/</li>
 <li><a hef ="#"></a></li>
 </ol>
